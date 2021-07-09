@@ -1,0 +1,25 @@
+//Nome: Ramon Crivelari Batista -  RA: 2269236
+
+import java.util.Scanner;
+
+public class LerNome {
+    
+    static String nome = "";
+    
+    public static String Nome(){
+        //String nome = "";
+        Scanner ler = new Scanner(System.in);
+        nome = ler.next();
+        return nome;
+    }
+    
+    public static void ImprimirNome(String nome){
+        System.out.printf("\nMeu nome é: "+nome);
+    }
+    
+    public static void main(String arg[]){
+        Nome();
+        ImprimirNome(nome);
+
+    }
+}
