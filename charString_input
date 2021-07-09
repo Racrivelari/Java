@@ -1,0 +1,35 @@
+//Nome: Ramon Crivelari Batista     RA: 2269236
+
+import java.util.Scanner;
+
+public class Palavra {
+    
+    public static void main(String args[]) {
+        Scanner ler = new Scanner(System.in);
+        String palavra, caractere;
+        int i, aux = 0;
+    
+        System.out.printf("\nDigite uma palavra: ");
+        palavra = ler.nextLine();
+        
+        System.out.printf("\nInforme um caractere: ");
+        caractere = ler.nextLine();
+        
+        for( i = 0; i < palavra.length(); i ++){    //percorre a string com base no tamanho da mesma
+            if ( caractere.charAt(0) == palavra.charAt(i)){
+                aux++;  //serve pra acumular as repeticoes
+                System.out.printf("\nHá uma repeticao do caractere escolhido na posicao "+i);
+            }
+        }
+        
+        if (aux == 0){
+            System.out.printf("\nNao houve repeticao de caractere na frase/palavra.");
+            
+        }else{
+           System.out.println("\nForam encontados "+aux+" repeticoes da letra "+caractere+ " nessa frase!");
+
+       }
+
+      
+    }
+}
