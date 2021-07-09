@@ -1,0 +1,37 @@
+//Nome: Ramon Crivelari Batista     RA: 2269236
+
+import java.util.Scanner;
+
+public class Matriz2 {
+        
+    public static void main(String args[]) {
+        Scanner ler = new Scanner(System.in);
+        
+        int i = 0, j = 0;
+        
+        // Entrada de dimensoes da matriz pelo usuario
+        
+        System.out.printf("\nInforme as dimensoes da matriz: \n");
+        int tamanholinha = Integer.parseInt( ler.nextLine() );
+        int tamanhocoluna = Integer.parseInt( ler.nextLine() );
+        int[][] vet = new int[tamanholinha][tamanhocoluna]; 
+        
+        // Leitura e atribuicao de valores a matriz
+        
+        for( i = 0; i < tamanholinha ; i ++){  
+            for( j = 0; j < tamanhocoluna ; j++){
+                System.out.print("\nDigite um valor: ");                                                    
+                vet[i][j] = ler.nextInt();
+            }    
+        }
+        
+        // Inversao e impressao dos valores da matriz
+        
+        for( i =  tamanholinha - 1 ; i >= 0 ; i --){  
+            for( j = tamanhocoluna - 1 ; j >= 0 ; j--){      
+                System.out.printf("\nValores invertidos: "+vet[i][j]);
+            }
+        }
+        
+    }    
+}   
