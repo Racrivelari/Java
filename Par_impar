@@ -1,0 +1,20 @@
+//Nome: Ramon Crivelari Batista     RA: 2269236
+
+import java.util.Scanner;
+
+public class Selec1 {
+    public static void main(String arg[]){
+        Scanner ler = new Scanner(System.in);
+        
+        System.out.printf("Digite um valor: ");
+        int valor = ler.nextInt();
+        
+        if ( valor % 2 == 0){
+            System.out.printf("\nO numero é par");
+            
+        }else {
+            System.out.printf("\nO numero é impar");
+        }
+        
+    }
+}       
