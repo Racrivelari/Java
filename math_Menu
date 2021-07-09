@@ -1,0 +1,47 @@
+//Nome: Ramon Crivelari Batista     RA: 2269236
+
+import java.util.Scanner;
+
+public class Selec1 {
+    public static void main(String arg[]){
+        Scanner ler = new Scanner(System.in);
+        int v1 = 0, v2 = 0;
+        int opt;
+        
+        System.out.printf("\nInforme um valor: ");
+        v1 = ler.nextInt();
+        
+        System.out.printf("\nInforme outro valor: ");
+        v2 = ler.nextInt();
+        
+        System.out.printf("\nMenu de opcoes: ");
+        System.out.printf("\n1-Somar");
+        System.out.printf("\n2-Multiplicar");
+        System.out.printf("\n3-Subtrair");
+        System.out.printf("\n4-Dividir\n");
+        
+        opt = ler.nextInt();
+        
+        switch(opt){
+            case 1 : 
+                int soma = v1 + v2;
+                System.out.printf("O resultado da soma entre os dois valores é igual a: "+soma);
+                break;
+            case 2 : 
+                int mult = v1 * v2;
+                System.out.printf("O resultado da multiplicacao entre os dois valores é igual a: "+mult);
+                break;
+            case 3 : 
+                int subt = v1 - v2;
+                System.out.printf("O resultado da subtracao entre os dois valores é igual a: "+subt);
+                break;
+            case 4 : 
+                int div = v1 / v2;    (tenho q arrumar o resto dps)
+                System.out.printf("O resultado da divisao entre os dois valores é igual a: "+div);
+                break;    
+                
+        }
+        
+    }
+}       
+
